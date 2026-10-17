@@ -9,7 +9,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
 .role{margin:.15rem 0 2.5rem;color:var(--soft);font-style:italic}
 .side ul{list-style:none;margin:0;padding:0}
 .side li{margin:.2rem 0}
-.side li:nth-child(3){margin-top:1.1rem}
+.side li.sub a{padding-left:.9rem}
+.side li:nth-child(4){margin-top:1.1rem}
+.home-h{margin-bottom:1.5rem}
 .side a{text-decoration:none;color:var(--soft)}
 .side a:hover,.side a[aria-current]{color:var(--ink)}
 .side a[aria-current]{text-decoration:underline}
@@ -24,7 +26,8 @@ h2{font-weight:400;font-size:1.05rem;margin:4rem 0 1.25rem}
 figure{margin:0}
 figure img,.proj img{display:block;width:100%;height:auto;background:var(--rule)}
 figcaption{font-size:.85rem;color:var(--soft);margin-top:.45rem}
-figcaption .place{display:none}
+.g4 figcaption{text-align:center;line-height:1.45}
+figcaption .place{display:block}
 .filter{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;margin:-1.5rem 0 2rem}
 .filter button{font:inherit;background:none;border:0;padding:0;color:var(--soft);cursor:pointer}
 .filter button[aria-pressed=true]{color:var(--ink);text-decoration:underline;text-underline-offset:.2em}
@@ -35,8 +38,9 @@ figcaption .place{display:none}
 .g4{grid-template-columns:repeat(4,1fr)}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:3.5rem}
 .duo img{padding:3%;background:var(--frame)}
-.home{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;max-width:72rem;align-items:end}
+.home{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem;max-width:72rem;align-items:end}
 .home .proj img{aspect-ratio:4/5;object-fit:cover}
+.home{max-width:52rem}
 .proj{text-decoration:none;display:block}
 .proj span{display:block;margin-top:.6rem;font-size:1.15rem}
 .proj:hover span{text-decoration:underline}
@@ -56,7 +60,8 @@ figcaption .place{display:none}
  .side{position:static;height:auto;padding:1.5rem 1rem 0}
  .role{margin-bottom:1rem}
  .side ul{display:flex;flex-wrap:wrap;gap:.1rem 1.1rem}
- .side li,.side li:nth-child(3){margin:0}
+ .side li,.side li:nth-child(4){margin:0}
+ .side li.sub a{padding-left:0}
  main{padding:2rem 1rem 4rem}
  .g4,.g3{grid-template-columns:repeat(2,1fr)}
  .grid{gap:1.75rem 1rem}
