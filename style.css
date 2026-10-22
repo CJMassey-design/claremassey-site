@@ -70,3 +70,4 @@ figcaption .place{display:block}
 }
 .home{}
 @media (max-width:520px){.home{grid-template-columns:1fr;gap:2.5rem}.g2,.g3{grid-template-columns:1fr}.duo{gap:.35rem}}
+.method-figs{margin-bottom:3.5rem;max-width:72rem}
